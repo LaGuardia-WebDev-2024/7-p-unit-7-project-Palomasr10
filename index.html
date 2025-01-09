@@ -1,14 +1,14 @@
 <!-- Unit 7 Project
 Requirements
-[  ] three variables
-[  ] animation that moves position
-[  ] animation that changes size
-[  ] three new HTML elements/CSS Declarations
+[Yes] three variables
+[Yes] animation that moves position
+[Yes] animation that changes size
+[Yes] three new HTML elements/CSS Declarations
 
 Select ONE Additional 
 [ no ] Feature 1 - Use an Incrementing Shortcut 
 [ no ] Feature 2 - Move Object with Mouse
-[ no ] Feature 3 - Repeat Animation
+[Yes] Feature 3 - Repeat Animation
 [ no ] Feature 4 - Text on the Canvas
 [ no ] Feature 5 - Animate a color change
 -->
@@ -21,22 +21,52 @@ Select ONE Additional
     <meta name="viewport" content="width=device-width" />
     <title>Unit 7 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Chewy&family=Delius+Swash+Caps&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Chewy&family=Delius+Swash+Caps&family=Leckerli+One&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
-    <style></style>
+    <style>
+    
+      h1 {
+        rgb (185,29,156);
+      }
+      
+      .bungee-regular {
+  font-family: "Chewy", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.new{
+  font-family: "Leckerli One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+      
+  
+      
+    </style>
   </head>
 
   <body>
-    <h1>
+    <h1 class="new">
       New Year, New Me
     </h1>
     <div class="main">
       <canvas id="myCanvas" data-processing-sources="myP5Code.pde"> </canvas>
       <div>
-        <h2>
+        <h2 class="new">
           2025 Goals
         </h2>
         <ol>
-          <li>Spend More Time Coding </li>
+          <li class="bungee-regular">Spend More Time Coding </li>
+          <li class="bungee-regular">Read 10 independent reading books</li>
+          <li class="bungee-regular">Spend more time outside</li>
+          <li class="bungee-regular">Expand my music taste</li>
         </ol>
       </div>
     </div>

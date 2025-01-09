@@ -4,7 +4,12 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var fireworkX = 20;
+var moonHeight = 307;
+ var sunHeight = 93;
+var moonDir = -1;
+var sunDir = 1;
+var sunSize = 100;
+var moonSize = 0;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -17,9 +22,39 @@ draw = function(){
   }
   
   //🎯Animation Code Goes Here
-  rect(fireworkX, 15, 10, 10);
-  
-  fireworkX = fireworkX + 1;
+ 
+//Sun
+fill(230,217,86)
+stroke(230,217,86)
+ellipse(100,sunHeight,sunSize,sunSize)
+
+//Moon
+fill(131,132,157)
+stroke(131,132,157)
+ellipse(300,moonHeight,moonSize,moonSize)
+
+
+moonHeight = moonHeight + moonDir;
+
+sunSize = sunSize - sunDir/2;
+
+moonSize = moonSize - moonDir/2;
+
+if (moonHeight<93){
+moonDir = 1
+}
+if(moonHeight>307){
+moonDir = -1
+}
+
+sunHeight = sunHeight + sunDir;
+
+if (sunHeight>307){
+sunDir = -1
+}
+if(sunHeight<93){
+sunDir = 1
+}
 
 }
 

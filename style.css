@@ -1,15 +1,15 @@
 body {
-  background-color: black;
+  background-color: rgb(137, 207, 243);
   text-align: center;
-  color: white;
+  color: rgb(0, 169, 255);
 }
 
 
 #myCanvas {
-  background-image: url("https://images.pexels.com/photos/1387577/pexels-photo-1387577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-image: url("https://cdn.glitch.global/c35fbd81-6c42-4a23-a8c2-6b775476ebfa/city-night-skyline-stockcake.webp?v=1736269259374");
   background-size: 400px;
   border-radius: 30px;
-  border: 1px solid rgb(255,245,227);
+  border: 6px solid rgb(0, 169, 255);
 }
 
 .main{
